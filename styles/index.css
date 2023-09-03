@@ -24,9 +24,11 @@ body {
 
 header {
     background-color: #007bff; /* Azul */
-    color: #fff; /* Texto blanco */
     text-align: center;
     padding: 20px;
+}
+header h1{
+    color:white;
 }
 
 header img {
