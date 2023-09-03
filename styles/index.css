@@ -4,6 +4,11 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
+/* Habilitar el desplazamiento suave en toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -209,6 +214,81 @@ footer a {
 
 
 
+/* ANIMACIONES */
+
+
+
+/* Animación de entrada desde la izquierda */
+@keyframes entradaDesdeIzquierda {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+/* Animación de entrada desde la derecha */
+@keyframes entradaDesdeDerecha {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+/* Animación de entrada desde arriba */
+@keyframes entradaDesdeArriba {
+    0% {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+/* Animación de entrada desde abajo */
+@keyframes entradaDesdeAbajo {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+
+
+/* Aplicar las animaciones*/
+.entradaDesdeDerecha {
+ 
+    animation: entradaDesdeDerecha 1s ease-in-out; 
+}
+
+.entradaDesdeIzquierda {
+    animation: entradaDesdeIzquierda 1s ease-in-out; 
+}
+.entradaDesdeIzquierdaLenta {
+    animation: entradaDesdeIzquierda 2s ease-in-out; 
+   
+}
+
+.entradaDesdeArriba {
+    animation: entradaDesdeArriba 1s ease-in-out; 
+}
+
+.entradaDesdeAbajo {
+    animation: entradaDesdeAbajo 1s ease-in-out; 
+}
 
 
 

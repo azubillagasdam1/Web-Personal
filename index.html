@@ -12,7 +12,7 @@
     <header>
         <!-- Aquí puedes colocar un encabezado con el nombre y una foto de la persona -->
         <h1>Aitor Zubillaga Soria</h1>
-        <img src="imgs\FOTO AITOR.png" alt="FotoPerfil">
+        <img src="imgs\FOTO AITOR.png" alt="FotoPerfil" class="entradaDesdeArriba">
     </header>
     
 
@@ -44,18 +44,18 @@
     
     
     <main>
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="entradaDesdeIzquierda">
             <!-- Imagen a la izquierda -->
-            <img src="imgs/yo en la playa.png" alt="Tu Foto">
-        
+            <img src="imgs/yo en la playa.png" alt="Tu Foto" class="entradaDesdeIzquierdaLenta">
+            
             <!-- Texto a la derecha -->
-            <div>
+            <div class="carga">
                 <h2>Sobre Mí</h2>
                 <p>¡Hola! Soy Aitor, [breve descripción sobre ti]. Puedes agregar más detalles sobre ti aquí.</p>
             </div>
         </section>
         
-        <section id="experiencia">
+        <section id="experiencia" class="entradaDesdeDerecha">
             <!-- Puedes listar tu experiencia laboral aquí -->
             <h2>Experiencia Laboral</h2>
             <ul>
@@ -73,7 +73,7 @@
             </ul>
         </section>
         
-        <section id="educacion">
+        <section id="educacion" class="entradaDesdeIzquierda">
             <!-- Puedes listar tu educación aquí -->
             <h2>Educación</h2>
             <ul>
@@ -107,5 +107,20 @@
         <!-- Puedes agregar información adicional en el pie de página si lo deseas -->
         <p>Derechos de autor © [Año] [Tu nombre]</p>
     </footer>
+
+
+
+ <!-- script de la animación -->
+    <script>
+         
+        document.addEventListener("DOMContentLoaded", function() {
+            // Agregar la clase "carga" después de que el contenido se haya cargado
+            var elementosCarga = document.querySelectorAll(".carga");
+            elementosCarga.forEach(function(elemento) {
+                elemento.classList.add("carga");
+            });
+        });
+    </script>
+    
 </body>
 </html>
