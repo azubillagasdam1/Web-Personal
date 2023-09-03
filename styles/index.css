@@ -185,7 +185,7 @@ nav ul li:hover .submenu {
 
 
 
-/* Estilos específicos para contacto */
+/* Estilos para la sección "Contacto" */
 #contacto {
     background-color: #fff; /* Fondo blanco */
     padding: 30px;
@@ -196,6 +196,41 @@ nav ul li:hover .submenu {
     margin-bottom: 0px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
+
+#contacto h2 {
+    font-size: 30px;
+}
+
+#contacto p {
+    font-size: 20px;
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    margin: 0 10px; /* Espacio entre las redes sociales */
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s; /* Agregamos una transición para efecto de escala al pasar el cursor */
+}
+
+.redes-sociales a img {
+    width: 30px; /* Ancho de los logotipos */
+    height: 30px; /* Altura de los logotipos */
+}
+
+/* Efecto de escala al pasar el cursor sobre los logotipos */
+.redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+
 
 
 
