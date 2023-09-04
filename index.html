@@ -10,12 +10,17 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1 class="entradaTitulo">AITOR ZUBILLAGA SORIA</h1>
-            <h2 class="entradaTitulo">(DESARROLLADOR)</h2>
-            <img src="imgs/FOTO AITOR.png" alt="FotoPerfil" class="entradaDesdeArriba">
+
+        <h1 class="entradaDesdeArriba">AITOR ZUBILLAGA SORIA</h1>
+        <h2 class="entradaDesdeArriba">DESARROLLADOR DE APLICACIONES MULTIPLATAFORMAS</h2>
+        <div class="header-container">
+            <div class="header-content">
+                
+                <img src="imgs/FOTO AITOR.png" alt="FotoPerfil" class="entradaDifuminada">
+            </div>
         </div>
     </header>
+    
     
 
 
@@ -49,7 +54,7 @@
         <!--SOBRE MÍ -->
         <section id="sobre-mi" class="entradaDesdeIzquierda">
             <!-- Imagen a la izquierda -->
-            <img src="imgs/yo en la playa.png" alt="Tu Foto" class="entradaDesdeIzquierdaLenta">
+            <img id="imagen" src="imgs/yo en la playa.png" alt="Tu Foto" class="entradaDesdeIzquierdaLenta">
             
             <!-- Texto a la derecha -->
             <div class="carga">
@@ -124,6 +129,33 @@
                 elemento.classList.add("carga");
             });
         });
+    </script>
+    
+<!-- script de transición imagenes -->
+    <script>
+
+        // Lista de imágenes que quieres mostrar
+const imagenes = ["imgs/sexi.jpg", "imgs/FOTO AITOR.png", "imgs/yo en la playa.png"];
+let indiceImagenActual = 0;
+
+// Función para cambiar la imagen con un efecto de fundido
+function cambiarImagen() {
+    const imagen = document.getElementById("imagen");
+    indiceImagenActual = (indiceImagenActual + 1) % imagenes.length; // Cambia al siguiente índice de imagen
+
+    // Cambia la opacidad de la imagen a 0 (efecto de fundido)
+    imagen.style.opacity = 0;
+
+    // Después de un breve retraso, cambia la imagen y restablece la opacidad a 1
+    setTimeout(() => {
+        imagen.src = imagenes[indiceImagenActual];
+        imagen.style.opacity = 1;
+    }, 1500); // 500 milisegundos (0.5 segundos) para la transición de opacidad
+}
+
+// Llama a la función cambiarImagen cada 3 segundos para que las imágenes cambien automáticamente
+setInterval(cambiarImagen, 5000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
+
     </script>
     
 
