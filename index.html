@@ -9,8 +9,16 @@
     <link rel="icon" href="/imgs/logo-web.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
 
+    <div class="language-selector">
+  <select id="language-dropdown">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+    <!-- Agrega más opciones de idioma según sea necesario -->
+  </select>
+  <button id="change-language-button">Cambiar Idioma</button>
+</div>
+    <header>
         <h1 class="entradaDesdeArriba">AITOR ZUBILLAGA SORIA</h1>
         <h2 class="entradaDesdeArriba">DESARROLLADOR DE APLICACIONES MULTIPLATAFORMAS</h2>
         <div class="header-container">
@@ -133,7 +141,6 @@
     
 <!-- script de transición imagenes -->
     <script>
-
         // Lista de imágenes que quieres mostrar
 const imagenes = ["imgs/sexi.jpg", "imgs/FOTO AITOR.png", "imgs/yo en la playa.png"];
 let indiceImagenActual = 0;
@@ -155,10 +162,18 @@ function cambiarImagen() {
 
 // Llama a la función cambiarImagen cada 3 segundos para que las imágenes cambien automáticamente
 setInterval(cambiarImagen, 5000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
-
     </script>
+    <script>
+    const languageDropdown = document.getElementById('language-dropdown');
+    const changeLanguageButton = document.getElementById('change-language-button');
     
-
+    // Asigna eventos para cambiar el idioma cuando se haga clic en el botón
+    changeLanguageButton.addEventListener('click', () => {
+      const selectedLanguage = languageDropdown.value;
+      // Lógica para cambiar el contenido de la página según el idioma seleccionado
+      // Por ejemplo, puedes cargar contenido desde tus archivos de idioma o bases de datos aquí
+    });
+</script>
     
 </body>
 </html>
