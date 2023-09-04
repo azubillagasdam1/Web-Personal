@@ -1,7 +1,8 @@
-/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+
+ /*Agregar fuentes*/
+ @font-face {
+    font-family: 'MiFuentePersonalizada'; /* Nombre que asignarás a la fuente */
+    src: url('../fonts/fr-bold.ttf') format('truetype'); /* Ruta al archivo TTF */
 }
 
 /* Habilitar el desplazamiento suave en toda la página */
@@ -9,12 +10,25 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Estilos generales */
+/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #348dec; /* Azul */
+}
+
+
+
+/* Estilos generales y fondos */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background: linear-gradient(to bottom right, #007bff, #ffffff); /* Fondo degradado de azul (#007bff) a blanco (#ffffff) */
     color: #333; /* Texto negro */
 }
+
 
 .container {
     max-width: 960px;
@@ -22,69 +36,84 @@ body {
     padding: 20px;
 }
 
+/* Estilos para el encabezado */
 header {
-    background-color: #007bff; /* Azul */
     text-align: center;
-    padding: 20px;
+    padding: 0; /* Elimina el padding superior e inferior */
+    margin: 0; /* Elimina el margen superior e inferior */
+    height: 90vh; /* Ajusta la altura al 90% de la ventana */
+    display: flex;
+    flex-direction: column; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
 }
-header h1{
-    color:white;
+
+header h1,h2 {
+    color: white;
+    font-family: MiFuentePersonalizada;
+    font-size: 5vw;
+    margin-top: 20px; /* Agrega espacio entre la imagen y el texto */
+  
+}
+
+header h2 {
+    font-size: 3vw;
 }
 
 header img {
-    max-width: 100px;
-    border-radius: 50%; /* Para hacer que la imagen sea circular */
-    margin-top: 10px;
+   
+
+    border-radius: 50%; /* Borde redondeado para hacer la imagen circular */
+    border: 10px solid #ffffff; /* Borde con un grosor de 2px y color gris (#333) */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
 }
 
+    /*Lo fixea arriba*/
 nav {
+    background: #4a9ae9  ;
     position: sticky;/* deja fijo el menu*/
-    top:0;
+    top: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    
+    
 }
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #007bff; /* Azul */
-    padding: 10px 0;
+    border-color: #333;
+    border-radius: 2px;
+    
+    
+    
 }
 
 nav li {
-    margin: 0 20px;
+
+    background:#318CE7;
+    
 }
 
 nav a {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     text-decoration: none;
     color: #fff; /* Texto blanco */
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     transition: color 0.3s;
+    
+    
 }
 
 nav a:hover {
-    color: #00a5ff; /* Azul claro al pasar el cursor */
+    color: #779bb0; /* Azul claro al pasar el cursor */
 }
 
-main {
-    padding: 20px;
-}
 
-section {
-    margin-bottom: 30px;
-}
 
-h1, h2, h3 {
-    color: #007bff; /* Azul */
-}
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #007bff; /* Azul */
-    color: #fff; /* Texto blanco */
-}
 
 
 
@@ -93,19 +122,27 @@ footer {
 .submenu {
     display: none;
     position: absolute;
-    background-color: #007bff; /* Color de fondo azul */
+    background: linear-gradient(to right, #4097f5, #a2cbf6); /* Color de fondo azul */
     list-style: none;
-    padding: 0;
-    margin: 0;
+    text-align: left;
+    border-radius: 2px;
+    animation: entradaDifuminada 0.5s ease-in-out; /* Agrega la animación de difuminado */
+    opacity: 0; /* Establece la opacidad inicial en 0 para que la animación funcione */
+    top: 100%; /* Colocar el submenu debajo del elemento li */
+    
+  
 }
 
+/* Alinear los elementos del submenu verticalmente */
 .submenu li {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Mostrar el submenu al pasar el cursor sobre "Sobre Mí" */
 nav ul li:hover .submenu {
     display: block;
+    opacity: 1; /* Ajusta la opacidad a 1 cuando se muestra el submenu */
 }
 
 
@@ -126,14 +163,18 @@ nav ul li:hover .submenu {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     display: flex; /* Mostrar elementos en línea uno al lado del otro */
     align-items: center; /* Alinear elementos verticalmente al centro */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 #sobre-mi img {
     max-width: 50%; /* La imagen ocupará la mitad izquierda de la sección */
-    border-radius: 50%; /* Para hacer que la imagen sea circular */
     margin-right: 200px; /* Espacio entre la imagen y el texto */
+    border-radius: 20px;
 }
-#sobre-mi h2 {
+#sobre-mi h3 {
 
     font-size: 60px;
 }
@@ -160,7 +201,7 @@ nav ul li:hover .submenu {
 }
 
 /* Alinear el título de las secciones al centro */
-#experiencia h2, #educacion h2 {
+#experiencia h3, #educacion h3 {
     text-align: center;
     font-size: 30px;
 }
@@ -203,7 +244,7 @@ nav ul li:hover .submenu {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-#contacto h2 {
+#contacto h3 {
     font-size: 30px;
 }
 
@@ -247,11 +288,18 @@ nav ul li:hover .submenu {
 
 
 /* Estilos para enlaces en el pie de página */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #52a4fc; /* Azul */
+    color: #fff; /* Texto blanco */
+}
+
 footer a {
     color: #fff; /* Texto blanco */
     text-decoration: underline;
 }
-
 
 
 
@@ -307,6 +355,28 @@ footer a {
     }
 }
 
+/* Animación de entrada difuminada */
+@keyframes entradaDifuminada {
+    0% { 
+        transform: translateY(0%);
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+/* Animación de entrada titulo */
+@keyframes entradaTitulo {
+    0% { 
+        transform: translateY(0%);
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
 
 
 /* Aplicar las animaciones*/
@@ -329,6 +399,14 @@ footer a {
 
 .entradaDesdeAbajo {
     animation: entradaDesdeAbajo 1s ease-in-out; 
+}
+
+.entradaDifuminada {
+    animation: entradaDifuminada 2s ease-in-out; 
+}
+
+.entradaTitulo{
+    animation: entradaTitulo 3s ease-in-out;
 }
 
 
@@ -364,11 +442,13 @@ footer a {
         }
     
         /* Ajustar el tamaño de fuente del título y el texto */
-        #sobre-mi h2  {
+        #sobre-mi h3  {
             font-size: 40px;
         }
         #sobre-mi p {
             font-size: 20px;
 
         }
+
+       
 }

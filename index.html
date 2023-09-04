@@ -9,9 +9,11 @@
 </head>
 <body>
     <header>
-        <!-- encabezado -->
-        <h1>Aitor Zubillaga Soria</h1>
-        <img src="imgs\FOTO AITOR.png" alt="FotoPerfil" class="entradaDesdeArriba">
+        <div class="header-content">
+            <h1 class="entradaTitulo">AITOR ZUBILLAGA SORIA</h1>
+            <h2 class="entradaTitulo">(DESARROLLADOR)</h2>
+            <img src="imgs/FOTO AITOR.png" alt="FotoPerfil" class="entradaDesdeArriba">
+        </div>
     </header>
     
 
@@ -20,18 +22,18 @@
         <!-- MENU DE NAVEGACIÓN -->
         <ul>
              <!-- Sobre Mí -->
-            <li><a href="#sobre-mi">Sobre Mí</a>
+            <li><a href="#sobre-mi">Sobre Mí ☰</a>
                 <ul class="submenu">
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#experiencia"><u>Experiencia</u></a></li>
+                    <li><a href="#educacion"><u>Educación</u></a></li>
+                    <li><a href="#contacto"><u>Contacto</u></a></li>
                 </ul></li>
              <!-- Proyectos -->
-                <li><a href="#proyectos">proyectos</a>
+                <li><a href="#proyectos">proyectos ☰</a>
                     <ul class="submenu">
-                        <li><a href="#proyecto1">proyecto1</a></li>
-                        <li><a href="#proyecto2">proyecto2</a></li>
-                        <li><a href="#proyecto3">proyecto3</a></li>
+                        <li><a href="#proyecto1"><u>proyecto1</u></a></li>
+                        <li><a href="#proyecto2"><u>proyecto2</u></a></li>
+                        <li><a href="#proyecto3"><u>proyecto3</u></a></li>
                     </ul></li>
                  <!-- Galeria -->
                  <li><a href="#Galeria">Galeria</a></li>
@@ -50,22 +52,22 @@
             
             <!-- Texto a la derecha -->
             <div class="carga">
-                <h2>Sobre Mí</h2>
+                <h3>Sobre Mí</h3>
                 <p>¡Hola! Soy Aitor, [breve descripción sobre ti]. Puedes agregar más detalles sobre ti aquí.</p>
             </div>
         </section>
         
          <!--EXPERIENCIA LABORAL -->
         <section id="experiencia" class="entradaDesdeDerecha">
-            <h2>Experiencia Laboral</h2>
+            <h3>Experiencia Laboral</h3>
             <ul>
                 <li>
-                    <h3>Nombre de la Empresa 1</h3>
+                    <h4>Nombre de la Empresa 1</h4>
                     <p>Puesto: [Tu puesto]</p>
                     <p>Fecha: [Fecha de inicio] - [Fecha de finalización]</p>
                 </li>
                 <li>
-                    <h3>Nombre de la Empresa 2</h3>
+                    <h4>Nombre de la Empresa 2</h4>
                     <p>Puesto: [Tu puesto]</p>
                     <p>Fecha: [Fecha de inicio] - [Fecha de finalización]</p>
                 </li>
@@ -75,15 +77,15 @@
          <!--EDUCACIÓN -->
         <section id="educacion" class="entradaDesdeIzquierda">
             <!-- Puedes listar tu educación aquí -->
-            <h2>Educación</h2>
+            <h3>Educación</h3>
             <ul>
                 <li>
-                    <h3>Nombre de la Universidad 1</h3>
+                    <h4>Nombre de la Universidad 1</h4>
                     <p>Título: [Tu título]</p>
                     <p>Fecha de Graduación: [Fecha de graduación]</p>
                 </li>
                 <li>
-                    <h3>Nombre de la Universidad 2</h3>
+                    <h4>Nombre de la Universidad 2</h4>
                     <p>Título: [Tu título]</p>
                     <p>Fecha de Graduación: [Fecha de graduación]</p>
                 </li>
@@ -93,7 +95,7 @@
         
         <!--CONTACTO -->
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h3>Contacto</h3>
             <p>Puedes contactarme en [tu dirección de correo electrónico] o seguirme en mis redes sociales:</p>
             <div class="redes-sociales">
                 <a href="[Enlace a tu perfil de LinkedIn]"><img src="imgs/linkedin-logo.png" alt="LinkedIn"></a>
@@ -122,6 +124,8 @@
             });
         });
     </script>
+    
+
     
 </body>
 </html>
