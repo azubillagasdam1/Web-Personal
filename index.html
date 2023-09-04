@@ -10,6 +10,14 @@
 </head>
 <body>
 
+
+  <!--ICONO PRINCIPAL -->
+    <div class="boton-superior-izquierda">
+        <a class="imagen-logo" href="index.html"><img src="imgs/logo-pequeño.png" alt="Botón"></a>
+    </div>
+
+
+    <!--BOTONES IDIOMAS -->
     <div class="language-selector">
   <select id="language-dropdown">
     <option value="es">Español</option>
@@ -40,6 +48,7 @@
                 <ul class="submenu">
                     <li><a href="#experiencia"><u>Experiencia</u></a></li>
                     <li><a href="#educacion"><u>Educación</u></a></li>
+                    <li><a href="#idiomas"><u>idiomas</u></a></li>
                     <li><a href="#contacto"><u>Contacto</u></a></li>
                 </ul></li>
              <!-- Proyectos -->
@@ -106,7 +115,26 @@
               
             </ul>
         </section>
-        
+
+        <!--IDIOMAS -->
+        <section id="idiomas">
+        <h3 class="titulo-idiomas">IDIOMAS CONOCIDOS</h3>
+        <div class="skills-table">
+            <div class="skill-column">
+                <div class="skill-title">Alto Nivel</div>
+                <i class="fab fa-python skill-icon"></i>
+            </div>
+            <div class="skill-column">
+                <div class="skill-title">Moderado</div>
+                <i class="fab fa-js skill-icon"></i>
+            </div>
+            <div class="skill-column">
+                <div class="skill-title">Débil</div>
+                <i class="fab fa-php skill-icon"></i>
+            </div>
+        </div>
+    </section>
+
         <!--CONTACTO -->
         <section id="contacto">
             <h3>Contacto</h3>
@@ -163,6 +191,7 @@ function cambiarImagen() {
 // Llama a la función cambiarImagen cada 3 segundos para que las imágenes cambien automáticamente
 setInterval(cambiarImagen, 5000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
     </script>
+
     <script>
     const languageDropdown = document.getElementById('language-dropdown');
     const changeLanguageButton = document.getElementById('change-language-button');
