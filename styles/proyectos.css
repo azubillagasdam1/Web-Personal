@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* ajusta el section mas abajo */
+section {
+    scroll-margin-top: 50px;
+  }
+
 /* Anular los estilos de enlace para todos los elementos dentro de <a> */
 a,
 a:hover,
@@ -77,24 +82,7 @@ div.boton-superior-izquierda:hover{
 }
 
 
-/* Estilo del botón de selección de idioma */
-#change-language-button {
-    background-color: #6aa9e9;
-    /* Color de fondo azul */
-    color: #fff;
-    /* Color del texto en blanco */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-/* Cambiar el color del botón al pasar el mouse sobre él */
-#change-language-button:hover {
-    background-color: #007bff;
-    /* Color de fondo azul más oscuro al pasar el mouse */
-}
 
 /* Estilo del menú desplegable (select) */
 #language-dropdown {
@@ -128,7 +116,6 @@ div.boton-superior-izquierda:hover{
     pointer-events: none;
     /* Evitar eventos de clic en la flecha */
 }
-
 
 
 
