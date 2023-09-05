@@ -174,64 +174,6 @@ header h2 {
 
 
 
-
-
-/* Estilos para el contenedor del fondo encabezado */
-.header-container {
-
-
-    background-image: url("../imgs/fondo\ azul\ header.jpeg");
-    background-size: cover;
-    /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
-    background-position: center;
-    /* Centra la imagen de fondo horizontal y verticalmente */
-    border-radius: 10px;
-    /* Borde redondeado */
-    padding: 20px;
-    /* Espaciado interno */
-    margin-left: 30px;
-    margin-right: 30px;
-    /* Margen alrededor del cuadro blanco */
-
-    margin-bottom: 50px;
-
-}
-
-
-
-
-
-header img {
-    border-radius: 50%;
-    /* Borde redondeado para hacer la imagen circular */
-    border: 10px solid #ffffff;
-    /* Borde con un grosor de 10px y color blanco (#ffffff) */
-    object-fit: cover;
-    /* Ajusta la imagen para cubrir todo el espacio */
-    width: 30vw;
-    /* Ancho de la imagen */
-    transition: transform 0.2s ease; /* Transición suave al hacer hover */
-    animation-duration: 1.5s;
-    /* Duración total de la animación */
-    animation-timing-function: ease-in-out;
-    /* Función de temporización para suavizar la animación */
-}
-
-
-
-header img:active{
-     animation-name: salto;
-    /* Nombre de la animación a aplicar al hacer clic */
-    transform-origin: bottom;
-    /* Origen de la transformación en la parte inferior de la imagen */
-    animation-iteration-count: 1;
-    /* Número de veces que se ejecutará la animación (1 vez) */
-    opacity: 1;
-}
-
-.logo:hover:not(.active) {
-   
-  }
 /*NAVBAR*/
 
 /*Lo fixea arriba*/
@@ -322,184 +264,6 @@ nav ul li:hover .submenu {
 
 
 
-/* Estilos específicos para secciones */
-
-
-
-
-/* SOBRE MÍ */
-#sobre-mi {
-    background-color: #fff;
-    /* Fondo blanco */
-    padding: 50px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
-    display: flex;
-    /* Mostrar elementos en línea uno al lado del otro */
-    align-items: center;
-    /* Alinear elementos verticalmente al centro */
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-
-#sobre-mi img {
-    max-width: 50%;
-    /* La imagen ocupará la mitad izquierda de la sección */
-    margin-right: 200px;
-    /* Espacio entre la imagen y el texto */
-    border-radius: 20px;
-}
-
-#sobre-mi h3 {
-
-    font-size: 60px;
-}
-
-#sobre-mi p {
-    flex-grow: 1;
-    /* El texto ocupará todo el espacio restante */
-    font-size: 20px;
-    margin-right: 100px;
-}
-
-
-/* Complemento a el script de cambio de imagen */
-#imagen {
-    
-    z-index: 0; /* Coloca la imagen detrás del contenido */
-    opacity: 1;
-    /* La imagen inicial se muestra completamente */
-    transition: opacity 1s ease;
-    /* Transición de opacidad de 1 segundo (más suave) */
-    max-width: 100%;
-    /* Ajusta el tamaño de la imagen según el contenedor */
-    height: auto;
-}
-
-
-
-
-
-
-
-/* EXPERIENCIA Y EDUCACIÓN */
-#experiencia,
-#educacion {
-    background-color: #f0f0f0;
-    /* Fondo gris claro */
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
-    text-align: center;
-    /* Centrar el contenido */
-    margin: 0 auto;
-    /* Centrar en el contenedor principal */
-    max-width: 600px;
-    /* Ajustar el ancho máximo para una mejor legibilidad */
-}
-
-/* Alinear el título de las secciones al centro */
-#experiencia h3,
-#educacion h3 {
-    text-align: center;
-    font-size: 30px;
-}
-
-/* Alinear la lista de experiencias/educación al centro */
-#experiencia ul,
-#educacion ul {
-    text-align: left;
-    /* Revertir el texto alineado al centro para la lista */
-    font-size: 20px;
-    list-style: none;
-}
-
-/* Estilos para cada elemento de experiencia/educación */
-#experiencia li,
-#educacion li {
-    margin-bottom: 50px;
-    /* Espacio entre cada elemento de la lista */
-}
-
-/* Estilos para la sección "Educación" */
-#educacion {
-    background-color: #f5f5f5;
-    /* Fondo gris más claro para diferenciar */
-}
-
-    /*IDIOMAS*/
-    h3.titulo-idiomas{
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom:30px;
-        font-size: 40px;
-        
-    }
-    .skills-table {
-    
-        display: flex;
-        justify-content: space-between;
-        background: linear-gradient(to right, #318CE7, #afcdea);
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .skill-column {
-        text-align: center;
-        flex: 1;
-    }
-
-    .skill-title {
-        font-size: 25px;
-        margin-bottom: 10px;
-        color: #333;
-    }
-
-    .skill-icon {
-        font-size: 36px;
-        color: #007bff; /* Azul */
-    }
-    div.skill-column img {
-        transition: transform 0.5s ease; /* Cambia la duración y la función de temporización según tus preferencias */
-    }
-    /* Efecto de escala al pasar el cursor sobre los logotipos */
-     div.skill-column img:hover {
-        transform: scale(2);
-    }
-    
-
-
-
-
-
-/* CONTACTO */
-#contacto {
-    background-color: #fff;
-    /* Fondo blanco */
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
-    text-align: center;
-    /* Centrar el contenido */
-    margin-top: 30px;
-    margin-bottom: 0px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
-}
-
-#contacto h3 {
-    font-size: 30px;
-}
-
-#contacto p {
-    font-size: 20px;
-}
-
 
 
 
@@ -524,35 +288,7 @@ footer a {
     text-decoration: underline;
 }
 
-/*iconos*/
 
-.redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.redes-sociales a {
-    margin: 0 10px;
-    /* Espacio entre las redes sociales */
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.3s;
-    /* Agregamos una transición para efecto de escala al pasar el cursor */
-}
-
-.redes-sociales a img {
-    width: 30px;
-    /* Ancho de los logotipos */
-    height: 30px;
-    /* Altura de los logotipos */
-    transition: transform 0.3s ease; /* Cambia la duración y la función de temporización según tus preferencias */
-}
-
-div.redes-sociales img:hover{
-    transform: scale(2);
-}
 
 
 
@@ -596,7 +332,6 @@ div.redes-sociales img:hover{
 
 
 /* ANIMACIONES */
-
 
 
 /* Animación de entrada desde la izquierda */
@@ -720,6 +455,19 @@ div.redes-sociales img:hover{
 
 
 
+/* Media query para hacer que la página sea receptiva en dispositivos medianos */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+}
+
 /* Media query para hacer que la página sea receptiva en dispositivos pequeños */
 @media (max-width: 768px) {
 
@@ -733,25 +481,6 @@ div.redes-sociales img:hover{
         margin: 10px 0;
     }
 
+    
 
-    /* Ocultar la imagen en pantallas pequeñas */
-    #sobre-mi img {
-        display: none;
-
-    }
-
-    /* Centrar el texto en la sección "Sobre Mí" */
-    #sobre-mi div {
-        text-align: center;
-    }
-
-    /* Ajustar el tamaño de fuente del título y el texto */
-    #sobre-mi h3 {
-        font-size: 40px;
-    }
-
-    #sobre-mi p {
-        font-size: 20px;
-
-    }
 }
