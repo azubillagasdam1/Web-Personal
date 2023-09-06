@@ -332,7 +332,7 @@ p {
     border-radius: 50px;
     
 }
-.imagen:hover{
+.imagen img:hover{
 
     transform: scale(1.3);
 }
