@@ -346,13 +346,34 @@ nav ul li:hover .submenu {
     right: 0px;
 }
 
+/*COSAS DEL AGRANDADO*/
+.lightbox {
+    position: relative;
+    text-decoration: none;
+}
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
 
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
 
-
-
-
-
+/* Estilos para mostrar el lightbox cuando se hace clic */
+.lightbox:focus + .overlay {
+    display: flex;
+}
 
 /* FOOTER */
 
