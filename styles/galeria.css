@@ -197,7 +197,7 @@ nav a {
     color: #fff;
     /* Texto blanco */
     font-weight: bold;
-    font-size: 26px;
+    font-size: 40px;
     transition: color 0.3s, font-size 0.3s ease; /* Combinar transiciones en una línea */
 }
 
@@ -205,7 +205,7 @@ nav a:hover {
     color: #779bb0;
     /* Azul claro al pasar el cursor */
     transform: scale(2.5);
-    font-size: 40px;
+    font-size: 50px;
 }
 
 

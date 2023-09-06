@@ -196,7 +196,7 @@ nav a {
     color: #fff;
     /* Texto blanco */
     font-weight: bold;
-    font-size: 26px;
+    font-size: 40px;
     transition: color 0.3s, font-size 0.3s ease; /* Combinar transiciones en una línea */
 }
 
@@ -204,7 +204,7 @@ nav a:hover {
     color: #779bb0;
     /* Azul claro al pasar el cursor */
     transform: scale(2.5);
-    font-size: 40px;
+    font-size: 50px;
 }
 
 
@@ -255,10 +255,12 @@ nav ul li:hover .submenu {
     margin: 0px 100px 100px 100px;
     position: relative; /* Agregamos posición relativa al contenedor */
     border-radius: 20px;
-
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     overflow: hidden; /* Para ocultar el desbordamiento de la imagen */
     transition: transform 0.3s;
 }
+
+
 .div-proyecto h2 {
     font-size: 24px;
     margin: 0;
@@ -276,6 +278,7 @@ nav ul li:hover .submenu {
     align-items: center;
     margin: 50px;
     background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.5) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     border-radius: 20px;
 }
 
@@ -320,7 +323,7 @@ p {
 
 /* animacion pasar por bloque */
 .div-proyecto:hover {
-    background: linear-gradient(to right, #024184, #4b555f); /* Nuevo fondo degradado al pasar el mouse */
+    background: linear-gradient(to right, #3695fb, #cedeee); /* Fondo degradado */
     transform: scale(1.05); /* Escalamos ligeramente el elemento al pasar el mouse */
 }
 
