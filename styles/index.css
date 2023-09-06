@@ -198,11 +198,13 @@ header img {
     /* Ajusta la imagen para cubrir todo el espacio */
     width: 30vw;
     /* Ancho de la imagen */
+    height: 30vw; /* Igualamos el alto al ancho para hacerla circular */
     transition: transform 0.2s ease; /* Transición suave al hacer hover */
     animation-duration: 1.5s;
     /* Duración total de la animación */
     animation-timing-function: ease-in-out;
     /* Función de temporización para suavizar la animación */
+    transform: translateY(20px);
 }
 
 
