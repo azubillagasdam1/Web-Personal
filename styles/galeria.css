@@ -285,7 +285,7 @@ nav ul li:hover .submenu {
 }
 .slick{
     position: relative;
-    width: 500px; /*tamaño  lateral div-imgs*/
+    width: 500px; /*tamaño  lateral div-imagen*/
     padding: 0 18px;
     float: left;
     box-sizing: border-box;
