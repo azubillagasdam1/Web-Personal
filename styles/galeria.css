@@ -315,6 +315,12 @@ nav ul li:hover .submenu {
 .slick a img:hover{
     opacity: .85;
     transform: scale(1.1);
+    
+}
+.slick a:hover h4 {
+    color: #318CE7; /* Cambia el color a gris cuando se pasa el cursor sobre la imagen */
+    transition: color 0.4s ease-in-out; /* Agrega una transición de 0.3 segundos */
+
 }
 
 /* buttons */

@@ -310,6 +310,10 @@ nav ul li:hover .submenu {
     order: 1; /* Cambiamos el orden del elemento imagen */
     
 }
+.imagen img {
+    width: 500px; /* Cambia el valor a tu tamaño deseado */
+    height: auto; /* Auto para mantener la proporción original */
+}
 
 .contenido {
     flex: 2; /* El doble de ancho para el contenido en ambos casos */
